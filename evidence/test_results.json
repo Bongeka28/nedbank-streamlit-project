@@ -1,0 +1,54 @@
+{
+  "model_sha256": "e6e32db59a0465969163ffb041f029c2a8fb38bf7727d5bf24a8240951e36884",
+  "checks": [
+    {
+      "case": "Valid low activity",
+      "passed": true,
+      "predicted_class": "Low: 0-49 transactions",
+      "probability": "81.2%"
+    },
+    {
+      "case": "Valid medium activity",
+      "passed": true,
+      "predicted_class": "Medium: 50-199 transactions",
+      "probability": "85.6%"
+    },
+    {
+      "case": "Valid high activity",
+      "passed": true,
+      "predicted_class": "High: 200+ transactions",
+      "probability": "80.7%"
+    },
+    {
+      "case": "Invalid negative count",
+      "passed": true,
+      "error": "month_01 cannot be negative."
+    },
+    {
+      "case": "Three-row CSV through Streamlit input",
+      "passed": true
+    },
+    {
+      "case": "Missing required feature",
+      "passed": true,
+      "error": "Missing required features: month_01"
+    },
+    {
+      "case": "Editable manual profile",
+      "passed": true,
+      "predicted_class": "Low: 0-49 transactions"
+    },
+    {
+      "case": "Inconsistent rolling count",
+      "passed": true
+    },
+    {
+      "case": "Extra identifier column blocked",
+      "passed": true
+    },
+    {
+      "case": "Complete saved pipeline probabilities preserved",
+      "passed": true
+    }
+  ]
+}

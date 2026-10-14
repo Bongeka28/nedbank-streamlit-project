@@ -1,0 +1,5 @@
+{
+  "launch_command": "python -m streamlit run streamlit_app.py",
+  "health": "ok",
+  "public_deployment": false
+}

@@ -1,0 +1,56 @@
+Feature,Type,Definition
+month_01,numeric,Observed transactions in 2014-11
+month_02,numeric,Observed transactions in 2014-12
+month_03,numeric,Observed transactions in 2015-01
+month_04,numeric,Observed transactions in 2015-02
+month_05,numeric,Observed transactions in 2015-03
+month_06,numeric,Observed transactions in 2015-04
+month_07,numeric,Observed transactions in 2015-05
+month_08,numeric,Observed transactions in 2015-06
+month_09,numeric,Observed transactions in 2015-07
+month_10,numeric,Observed transactions in 2015-08
+month_11,numeric,Observed transactions in 2015-09
+month_12,numeric,Observed transactions in 2015-10
+lifetime_count,numeric,All observed pre-cutoff transactions
+account_count,numeric,Distinct recorded account IDs
+active_days,numeric,Days with >=1 recorded transaction
+recency_days,numeric,Days since last record to 1 Nov 2015
+observed_days,numeric,Days since first record to 1 Nov 2015
+debit_share,numeric,Fraction with negative transaction amount
+mean_abs_amount,numeric,"Mean absolute signed amount, ZAR"
+std_amount,numeric,"Population standard deviation of signed amounts, ZAR"
+mean_balance,numeric,"Mean observed statement balance, ZAR"
+min_balance,numeric,"Minimum observed statement balance, ZAR"
+count_3m,numeric,Sum / monthly mean / population standard deviation over trailing months; see feature name
+mean_3m,numeric,Sum / monthly mean / population standard deviation over trailing months; see feature name
+std_3m,numeric,Sum / monthly mean / population standard deviation over trailing months; see feature name
+count_6m,numeric,Sum / monthly mean / population standard deviation over trailing months; see feature name
+mean_6m,numeric,Sum / monthly mean / population standard deviation over trailing months; see feature name
+std_6m,numeric,Sum / monthly mean / population standard deviation over trailing months; see feature name
+count_12m,numeric,Sum / monthly mean / population standard deviation over trailing months; see feature name
+mean_12m,numeric,Sum / monthly mean / population standard deviation over trailing months; see feature name
+std_12m,numeric,Sum / monthly mean / population standard deviation over trailing months; see feature name
+recent_ratio,numeric,(last 3-month count+1)/(previous 3-month count+1)
+active_months_12m,numeric,Number of last 12 months with records
+slope_12m,numeric,"Linear monthly count slope, transactions per month"
+category_Account Maintenance,numeric,Aug-Oct 2015 transaction count for Account Maintenance
+category_Card Transactions,numeric,Aug-Oct 2015 transaction count for Card Transactions
+category_Charges & Fees,numeric,Aug-Oct 2015 transaction count for Charges & Fees
+category_Debit Orders & Standing Orders,numeric,Aug-Oct 2015 transaction count for Debit Orders & Standing Orders
+category_Deposits,numeric,Aug-Oct 2015 transaction count for Deposits
+category_Foreign Exchange,numeric,Aug-Oct 2015 transaction count for Foreign Exchange
+category_Interest & Investments,numeric,Aug-Oct 2015 transaction count for Interest & Investments
+category_Other / Unclassified,numeric,Aug-Oct 2015 transaction count for Other / Unclassified
+category_Reversals & Adjustments,numeric,Aug-Oct 2015 transaction count for Reversals & Adjustments
+category_Teller & Branch Transactions,numeric,Aug-Oct 2015 transaction count for Teller & Branch Transactions
+category_Transfers & Payments,numeric,Aug-Oct 2015 transaction count for Transfers & Payments
+category_Unpaid / Returned Items,numeric,Aug-Oct 2015 transaction count for Unpaid / Returned Items
+category_Withdrawals,numeric,Aug-Oct 2015 transaction count for Withdrawals
+fin_nii,numeric,"Mean Aug-Oct net interest income, ZAR"
+fin_nir,numeric,"Mean Aug-Oct net interest revenue, ZAR"
+fin_products,numeric,Distinct recent financial product categories
+fin_rows,numeric,Number of recent financial records
+financials_missing,numeric,1 if no recent financials
+income_log,numeric,log1p(nonnegative annual gross income in ZAR)
+income_missing,numeric,1 if annual income is absent
+primary_banking,numeric,1 if profile indicates PRIMARY banking
